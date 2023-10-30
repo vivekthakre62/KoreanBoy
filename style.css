@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:gilroy;
+    box-sizing: border-box;
+}
+html body{
+    width:100%;
+    height:100%;
+    background-color: white;
+}
+#main{
+
+position: relative;
+overflow: hidden;
+
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+background: white;
+position: relative;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+background:white;
+position: relative;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+background:white;
+}
+#page3{
+    height: 100vh;
+    width:100vw;
+background:white;
+}
+canvas{
+max-width: 100vw;
+max-height: 100vh;
+position:relative;
+z-index: 9;/*image ko aage lane ke lie*/
+
+}
+#loop{
+    display: flex;
+    height:25%;
+    width: 100%;
+    background-color:white;
+    position: absolute;
+    top:30%;
+    font-size: 100px;
+    white-space:nowrap;
+    /*this is bcz the text ya element ek line me aaye na ki niche jaye */
+    font-family: gilroy;
+
+
+}
+#loop h1{
+    font-weight: 500px;
+    animation-name:anime;
+    animation-duration: 19s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;/*text ke border ko color de deta hai*/
+    color: transparent;
+}
+@keyframes anime {
+0%{
+    transform: translateX(0%);
+}    
+100%{
+    transform:translateX(-100%);
+}
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+   
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    padding: 0px 30px;
+}
+#nav h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 25px;
+}
+#nav button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    color:white;
+    background-color: black;
+    border: none;
+}
+#page p{
+    
+    position: absolute;
+    top:60%;
+    font-size: 18px;
+}
+#page h4{
+    position: absolute;
+    top:68%;
+    left:28%;
+    
+}
+
+#left {
+    position: absolute;
+    top:32%;
+    left: 2%;
+
+}
+#left p{
+    top :35%;
+    left: 10%;
+}
+#left h1{
+font-size: 60px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ #right{
+position: absolute;
+top:55%;
+left: 60%;
+
+}
+#right h1{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     
+}
+#right h1 span{
+margin-right:30px;
+
+}
+#page2 #p2l h1 {
+position: absolute;
+top:32%;
+left: 13%;
+font-size: 60px;
+font-family: 'Times New Roman', Times, serif;
+}
+#page2 #p2l h4{
+    position: absolute;
+    top: 30%;
+    left: 14%;
+    font-size: 15px;
+    font-weight: 500;
+}
+#page2 #p2r p{
+    position: absolute;
+    top:60%;
+    left: 60%;
+
+}
+#page3 h1{
+    position: absolute;
+    top:55%;
+    right:5%;
+    text-align: end;
+    font-size: 60px;
+}
+#page3 h3{
+    position: absolute;
+    top:52%;
+    right:10%;
+    text-align: end;
+    font-weight: 500;
+}
